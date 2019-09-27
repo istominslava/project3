@@ -9,13 +9,12 @@ a {
 }
 
 body {
- font-family: "Arial", sans-serif;
+ font-family: Arial, sans-serif;
 }
 
  span {
   color: #fa5c65;
  }
- 
 
 .header {
  background: url(../img/bgr.jpg) no-repeat center top / cover;
@@ -31,13 +30,13 @@ body {
 .heading {
  display: flex;
  justify-content: space-between;
+ margin-bottom: 305px;
 }
 
 .logo {
  background-color: #fa5c65;
  border-bottom-right-radius: 5px;
  border-bottom-left-radius: 5px;
- margin-bottom: 305px;
 }
 
 .logo p {
@@ -73,7 +72,7 @@ body {
  .menu li:nth-child(5) {
   margin-left: 30px;
  }
- 
+
  .menu a {
   color: #263742;
   font-size: 14px;
@@ -81,22 +80,21 @@ body {
  }
  
  .inside {
-  max-width: 520px;
-  
+  max-width: 410px;
  }
  
  h1 {
   text-transform: uppercase;
   font-size: 48px;
   color: #314a5b;
-  padding-bottom: 30px;
+  margin-bottom: 30px;
  }
  
 
  .inside p {
   color:#314a5b;
   font-size: 20px;
-  padding-bottom: 45px;
+  margin-bottom: 45px;
  }
  
  .button {
@@ -104,7 +102,7 @@ body {
  color: #fff;
  border-radius: 5px;
  display: inline-block;
- padding: 25px 45px 25px 45px;
+ padding: 25px 45px;
  margin-bottom: 380px;
  text-align: center;
  font-weight: bold;
@@ -208,6 +206,10 @@ body {
  margin-top: 50px;
 }
 
+ .flex-container {
+  display: flex;
+ }
+
 .intro {
  margin-left: 20px;
 }
@@ -261,4 +263,37 @@ hr {
 .footer p {
  color: #a5aaae;
  font-size: 13px;
+}
+
+@media (max-width : 768px) {
+
+.header {
+ background: url(../img/bgr.jpg) no-repeat center top / cover;
+}
+
+ .heading {
+  flex-direction: column;
+ }
+ 
+ 
+ .logo {
+  align-self: flex-start;
+ }
+ 
+ .container-flex  {
+  flex-direction: column;
+  align-self: flex-start;
+ }
+ 
+ .portfolio-flex {
+  flex-direction: column;
+ }
+ 
+ .sidebar {
+  margin-left: 0;
+ }
+ 
+ .workers-flex {
+  flex-direction: column;
+ }
 }
