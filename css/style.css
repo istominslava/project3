@@ -31,6 +31,7 @@ body {
  display: flex;
  justify-content: space-between;
  margin-bottom: 305px;
+ align-items: center;
 }
 
 .logo {
@@ -51,25 +52,21 @@ body {
  border-radius: 5px;
 }
 
-.navigation {
- margin-top: 30px;
-}
-
 .menu  li{
  display: inline-block;
  margin-left: 40px;
  text-transform: uppercase;
  }
  
- .menu li:first-child {
+ /*.menu li:first-child {
   margin-left: 10px;
  }
  
  .menu li:last-child {
   margin-left: 23px;
- }
+ }*/
  
- .menu li:nth-child(5) {
+ .menu li:not(:first-child) {
   margin-left: 30px;
  }
 
@@ -101,10 +98,8 @@ body {
  background-color: #fa5c65;
  color: #fff;
  border-radius: 5px;
- display: inline-block;
  padding: 25px 45px;
  margin-bottom: 380px;
- text-align: center;
  font-weight: bold;
  font-size: 15px;
  text-transform: uppercase;
@@ -269,11 +264,12 @@ hr {
 
  .heading {
   flex-direction: column;
+  align-items: flex-start;
  }
  
  
  .logo {
-  align-self: flex-start;
+  margin-bottom: 10px;
  }
  
  .container-flex  {
@@ -291,5 +287,8 @@ hr {
  
  .workers-flex {
   flex-direction: column;
+ }
+ .flex-container:not(:last-child) {
+  margin-bottom: 15px;
  }
 }
