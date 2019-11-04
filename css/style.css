@@ -58,14 +58,6 @@ body {
  text-transform: uppercase;
  }
  
- /*.menu li:first-child {
-  margin-left: 10px;
- }
- 
- .menu li:last-child {
-  margin-left: 23px;
- }*/
- 
  .menu li:not(:first-child) {
   margin-left: 30px;
  }
